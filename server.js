@@ -10,7 +10,7 @@ const app = express();
 app.use(requireHTTPS);
 app.use(express.static("./dist/barros"));
 app.get("/*", function(req, res) {
-  res.sendFile("index.html", {root: "dist/barros/"}
+  res.sendFile("index.html", {root: "dist/chat-front"}
   );
 });
 app.listen(process.env.PORT || 8080);
