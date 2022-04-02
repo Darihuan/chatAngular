@@ -1,0 +1,55 @@
+
+<div  *ngIf="localUser!=message.user && message.color == 1" class=" relative   my-5 w-8/12 mx-4 bg-green-100 border rounded-full px-10 py-5 border-transparent shadow-xl flex-col ">
+  <div  *ngIf="message.type=='MESSAGE'" class="flex flex-row justify-between font-mono">
+    <span class="text-xs text-gray-500">{{message.user}}</span>
+    <span  class="text-xs text-gray-500">{{date|date: 'hh:mm'}}</span>
+  </div>
+  <p  *ngIf="message.type=='NEW_USER'" class="text-center font-sans text-gray-800 mx-3">{{date|date: 'hh:mm'}} {{message.content}}</p>
+
+  <p *ngIf="message.type=='MESSAGE'" class="text-center font-sans text-gray-800 mx-3"> {{message.content}}</p>
+</div>
+
+<div  *ngIf="localUser!=message.user && message.color == 2" class=" relative   my-5 w-8/12 mx-4 bg-blue-100 border rounded-full px-10 py-5 border-transparent shadow-xl flex-col ">
+  <div  *ngIf="message.type=='MESSAGE'" class="flex flex-row justify-between font-mono">
+    <span class="text-xs text-gray-500">{{message.user}}</span>
+    <span  class="text-xs text-gray-500">{{date|date: 'hh:mm'}}</span>
+  </div>
+  <p  *ngIf="message.type=='NEW_USER'" class="text-center font-sans text-gray-800 mx-3">{{date|date: 'hh:mm'}} {{message.content}}</p>
+
+  <p *ngIf="message.type=='MESSAGE'" class="text-center font-sans text-gray-800 mx-3"> {{message.content}}</p>
+</div>
+
+
+
+<div  *ngIf="localUser!=message.user && message.color == 3" class=" relative   my-5 w-8/12 mx-4 bg-red-100 border rounded-full px-10 py-5 border-transparent shadow-xl flex-col ">
+  <div  *ngIf="message.type=='MESSAGE'" class="flex flex-row justify-between font-mono">
+    <span class="text-xs text-gray-500">{{message.user}}</span>
+    <span  class="text-xs text-gray-500">{{date|date: 'hh:mm'}}</span>
+  </div>
+  <p  *ngIf="message.type=='NEW_USER'" class="text-center font-sans text-gray-800 mx-3">{{date|date: 'hh:mm'}} {{message.content}}</p>
+
+  <p *ngIf="message.type=='MESSAGE'" class="text-center font-sans text-gray-800 mx-3"> {{message.content}}</p>
+</div>
+
+
+<div  *ngIf="localUser!=message.user && message.color == 4" class=" relative   my-5 w-8/12 mx-4 bg-purple-100 border rounded-full px-10 py-5 border-transparent shadow-xl flex-col ">
+  <div  *ngIf="message.type=='MESSAGE'" class="flex flex-row justify-between font-mono">
+    <span class="text-xs text-gray-500">{{message.user}}</span>
+    <span  class="text-xs text-gray-500">{{date|date: 'hh:mm'}}</span>
+  </div>
+  <p  *ngIf="message.type=='NEW_USER'" class="text-center font-sans text-gray-800 mx-3">{{date|date: 'hh:mm'}} {{message.content}}</p>
+
+  <p *ngIf="message.type=='MESSAGE'" class="text-center font-sans text-gray-800 mx-3"> {{message.content}}</p>
+</div>
+
+
+<div  *ngIf="localUser==message.user " class=" relative   my-5 w-8/12 mx-4 bg-gray-100 border rounded-full px-10 py-5 border-transparent shadow-xl flex-col ">
+  <div *ngIf="message.type=='MESSAGE'" class="flex flex-row justify-between font-mono">
+    <span class="text-xs text-gray-700">{{message.user}}</span>
+    <span  class="text-xs text-gray-700">{{date|date: 'hh:mm'}}</span>
+  </div>
+  <p *ngIf="message.type=='NEW_USER'" class="text-center font-sans text-gray-900 mx-3">{{date|date: 'hh:mm'}} {{message.content}}</p>
+
+  <p *ngIf="message.type=='MESSAGE'" class="text-center font-sans text-gray-900 mx-3"> {{message.content}}</p>
+</div>
+
